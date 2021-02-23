@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <style>
+      html,
+      body {
+        height: 100%;
+        overflow: hidden;
+      }
+      body {
+        margin: 0;
+        background-color: #000;
+        color: #fff;
+        font-family: Monospace;
+        font-size: 13px;
+        line-height: 24px;
+      }
+
+      #pixijsContainer {
+        display: block;
+        width: 100%;
+        height: 100%;
+        float: left;
+      }
+
+      #pixijscanvas {
+        margin: 0px;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: black;
+	      color: white;
+      }
+    </style>
+    <div id="pixijsContainer">
+      <canvas id="pixijscanvas">
+      </canvas>
+    </div>
+  </body>
+</html>
