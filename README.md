@@ -14,4 +14,4 @@ webpack/base.js __currentDir='Pixi3d'/'water2d'...  设置当前开发工作目�
 ---
 ## Water2d
 
-![image](https://github.com/hanxuebing/gallery/images/water2d.gif)
+![image](https://github.com/hanxuebing/gallery/blob/master/images/water2d.gif)
