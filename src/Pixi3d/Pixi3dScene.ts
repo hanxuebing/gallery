@@ -226,7 +226,7 @@ export function main() {
       modelMatrix, // destination matrix
       modelMatrix, // matrix to rotate
       cubeRotation, // amount to rotate in radians
-      [0, 0, 1],
+      [0, 1, 1],
     ); // axis to rotate around (Z)
     // mat4.rotate(viewMatrix, viewMatrix, cubeRotation, [0, 0, 1]);
     // mat4.rotate(
