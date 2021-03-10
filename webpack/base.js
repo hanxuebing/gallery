@@ -6,7 +6,7 @@ const CleanWebpackPlugin = require("clean-webpack-plugin");
 // const gitRevisionPlugin = new GitRevisionPlugin({
 //   lightweightTags: true,
 // });
-const __currentDir = "water2d";
+const __currentDir = "quaternion";
 
 module.exports = {
   mode: "development",
