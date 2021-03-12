@@ -1,4 +1,5 @@
-import { mat4, quat } from "../libs/gl-matrix";
+import { mat4, quat, ReadonlyQuat } from "gl-matrix";
+
 var cubeRotation = 0.0;
 
 main();
@@ -29,7 +30,8 @@ function main() {
     varying lowp vec4 vColor;
 
     void main(void) {
-      gl_Position = uProjectionMatrix * uModelViewMatrix * aVertexPosition;
+      // gl_Position = uProjectionMatrix * uModelViewMatrix * aVertexPosition;
+      gl_Position = aVertexPosition * uModelViewMatrix * uProjectionMatrix;
       vColor = aVertexColor;
     }
   `;
@@ -248,8 +250,15 @@ function drawScene(gl, programInfo, buffers, deltaTime) {
     mat4.translate(modelViewMatrix,     // destination matrix
         modelViewMatrix,     // matrix to translate
         [-0.0, 0.0, -16.0]);  // amount to translate
+    mat4.transpose(modelViewMatrix, modelViewMatrix);
+    mat4.transpose(projectionMatrix, projectionMatrix);
     //-----------------------------------------------------------------------------------------------
-    quat.
+    // var rotateMatrix = mat4.create();
+    // mat4.identity(rotateMatrix);
+    // var rotateQuaternion = quat.create() as Float32Array;
+    // quat.rotateX(rotateQuaternion, rotateQuaternion, cubeRotation);
+    // mat4.fromQuat(rotateMatrix, rotateQuaternion);
+    // mat4.mul(modelViewMatrix, modelViewMatrix, rotateMatrix);
     //-----------------------------------------------------------------------------------------------
     // mat4.rotate(modelViewMatrix,  // destination matrix
     //     modelViewMatrix,  // matrix to rotate

@@ -37,6 +37,7 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
+    "gl-matrix": "^3.3.0",
     "pixi.js": "^5.2.4",
     "three": "^0.116.1"
   }
