@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        // "declaration": true,
+        // "declarationDir":"./types",
+        "target": "ES2016",
+        "module": "esnext",
+        "sourceMap": true,
+        "allowJs": true,
+        "noImplicitAny": false,
+        "strict": false,
+        "moduleResolution": "node", //模块的解析
+    }
+}

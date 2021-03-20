@@ -23,6 +23,7 @@ module.exports = merge(base, {
           }
         }
       })
-    ]
+    ],
+    runtimeChunk: 'single',
   }
 });

@@ -1,8 +1,15 @@
 import { mat4, quat, ReadonlyQuat } from "gl-matrix";
+import { FetchTest } from "./FetchTest";
 
 var cubeRotation = 0.0;
 
 main();
+import(/* webpackPrefetch: true */  './FetchTest').then((e) => {
+    e.FetchTest.test();
+});
+import(/* webpackPreload: true */  './LoadTest').then((e) => {
+    e.LoadTest.test();
+});
 
 //
 // Start here
